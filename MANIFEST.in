@@ -1,0 +1,2 @@
+recursive-include rea/static *
+recursive-include rea/templates *
