@@ -177,12 +177,13 @@ INSTALLED_APPS = [
     'core',
     'compressor',
     ### BEGIN INSERTED INSTALLED APPS ###
-    'features', 
-    'manipulators', 
-    'accounts', 
-    'data_manager', 
-    'visualize', 
-    'nursery', 
+    'features',
+    'manipulators',
+    'accounts',
+    'data_manager',
+    'visualize',
+    'nursery',
+    'rea',
     ### END INSERTED INSTALLED APPS ###
 ]
 
@@ -192,23 +193,36 @@ INSTALLED_APPS = [
 
 MAP_TECH = 'ol4'
 
-try:
-    ### START MODULE SETTINGS IMPORT ###
-    from features.settings import *
-    from accounts.settings import *
-    from data_manager.settings import *
-    ### END MODULE SETTINGS IMPORT ###
-except ImportError:
-    pass
 
+# try:
+# from django.conf.settings import *
+### START MODULE SETTINGS IMPORT ###
+from visualize.settings import *
+from features.settings import *
+from accounts.settings import *
+from data_manager.settings import *
+### END MODULE SETTINGS IMPORT ###
+
+### ACCOUNT SETTINGS ###
 RECAPTCHA_PUBLIC_KEY = 'SiteKey'
 RECAPTCHA_PRIVATE_KEY = 'SetInLocalSettings'
+
+### VISUALIZE SETTINGS ###
+VISUALIZE_PLANNER_TEMPLATE='rea/planner.html'
+INITIAL_X = -122.82
+INITIAL_Y = 45.53
+INITIAL_Z = 11
+
+from rea.local_settings import *
+# except ImportError:
+#     pass
 
 try:
     from marineplanner.local_settings import *
 except ImportError:
     pass
 
-# This seems to help with some backward compatibility
-import django
-django.setup()
+if __name__ == '__main__':
+    # This seems to help with some backward compatibility
+    import django
+    django.setup()
