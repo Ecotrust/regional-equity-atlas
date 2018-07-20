@@ -1,6 +1,14 @@
 {% extends "visualize/planner.html" %}
 {% load static %}
 
+{% block header %}
+<nav class="navbar navbar-default {% block navbar-extra-classes %}navbar-fixed-top{% endblock %}" role="navigation">
+    <div class="container">
+        {% include 'rea/navbar.html' %}
+    </div>
+</nav>
+{% endblock %}
+
 {% block title %}Regional Equity Atlas{% endblock %}
 
 {% block extra_css %}

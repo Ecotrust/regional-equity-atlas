@@ -212,6 +212,7 @@ VISUALIZE_PLANNER_TEMPLATE='rea/planner.html'
 INITIAL_X = -122.82
 INITIAL_Y = 45.53
 INITIAL_Z = 11
+SEARCH_DISABLED = True
 
 from rea.local_settings import *
 # except ImportError:
