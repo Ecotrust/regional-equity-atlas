@@ -1,3 +1,92 @@
+h4 {
+  font-size: 15px;
+}
+
+body.template-visualize #left-panel {
+  top: 85px;
+  /* bottom: 20px; */
+  left: auto;
+  right: 10px;
+  height: calc(100% - 190px);
+  width: 280px;
+}
+
+body.template-visualize #left-panel .panel-heading {
+  height: 40px;
+  padding: 0;
+}
+
+body.template-visualize .panel.collapsible .panel-title {
+  padding-left: 35px;
+  padding-right: 10px;
+}
+
+body.template-visualize .panel.collapsible.collapsed .show-collapsed {
+  padding-top: 5px;
+}
+
+body.template-visualize #left-panel .panel-heading .search-box {
+  width: 100%;
+  margin-top: 0;
+}
+
+body.template-visualize #left-panel .panel-title .form-search {
+  width: 100%;
+}
+
+body.template-visualize #left-panel .panel-title .form-search .right {
+  top: 10px;
+}
+
+
+body.template-visualize #left-panel .panel-title .collapse-button {
+  left: 0;
+  margin: 3px;
+}
+
+body.template-visualize #left-panel .panel-body {
+  height: calc(100% - 40px);
+}
+
+body.template-visualize #left-panel #myTabContent {
+  /* height: calc(100% + 22px); */
+  /* height: 100%; */
+}
+
+
+body.template-visualize #map-controls {
+  top: 10px;
+}
+
+body.template-visualize .olControlMousePosition,
+body.template-visualize #map-controls a,
+div.olControlZoom a {
+  /* width: 27px;
+  height: 27px; */
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+body.template-visualize .olControlMousePosition:empty {
+  border: none;
+}
+
+/* body.template-visualize #baselayers {
+  top: 35px;
+  bottom: auto;
+  right: 80px;
+} */
+
+body.template-visualize #toggleBaselayer {
+  width: 45px;
+  height: 45px;
+  padding: 4px;
+}
+
+div.olControlZoom {
+  bottom: 25px;
+}
+
 footer {
   visiblilty: hidden;
   display: none;
