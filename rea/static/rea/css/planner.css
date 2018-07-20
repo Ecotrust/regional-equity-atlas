@@ -61,10 +61,19 @@ body.template-visualize #map-controls {
 body.template-visualize .olControlMousePosition,
 body.template-visualize #map-controls a,
 div.olControlZoom a {
-  /* width: 27px;
-  height: 27px; */
   border: 1px solid black;
   border-radius: 4px;
+}
+
+body.template-visualize #toggleBaselayer:hover {
+  border: 2px solid #00a564;
+}
+
+div.olControlZoom a:hover,
+body.template-visualize #map-controls a:hover {
+  color: #00a564;
+  background-color: #CCC;
+  border: 2px solid #00a564;
 }
 
 body.template-visualize .olControlMousePosition:empty {
