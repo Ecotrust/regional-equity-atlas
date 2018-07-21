@@ -213,6 +213,7 @@ INITIAL_X = -122.82
 INITIAL_Y = 45.53
 INITIAL_Z = 11
 SEARCH_DISABLED = True
+ADMIN_URL = "/admin"
 
 from rea.local_settings import *
 # except ImportError:

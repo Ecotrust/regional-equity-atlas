@@ -15,19 +15,21 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from rea import views as rea_views
 ### INSERT ADDITIONAL IMPORTS HERE ###
 import accounts.urls
 ### END PROJECT URL IMPORTS ###
 
 urlpatterns = [
+    url(r'^visualize/$', rea_views.visualize),
     url(r'^admin/?', admin.site.urls),
     ### INSERT PROJECT URL INCLUDES HERE ###
-    url(r'^features/', include('features.urls')), 
-    url(r'^manipulators/', include('manipulators.urls')), 
-    url(r'^account/auth/', include('social.apps.django_app.urls', namespace='social')), 
-    url(r'^account/', include('accounts.urls', namespace="account")), 
-    url(r'^data_manager/', include('data_manager.urls')), 
-    url(r'^visualize/', include('visualize.urls')), 
+    url(r'^features/', include('features.urls')),
+    url(r'^manipulators/', include('manipulators.urls')),
+    url(r'^account/auth/', include('social.apps.django_app.urls', namespace='social')),
+    url(r'^account/', include('accounts.urls', namespace="account")),
+    url(r'^data_manager/', include('data_manager.urls')),
+    url(r'^visualize/', include('visualize.urls')),
     ### END PROJECT URL INCLUDES ###
     # url(r'^visualize/', include('visualize.urls')),
     # url(r'^account/auth/', include('social.apps.django_app.urls', namespace='social')),
