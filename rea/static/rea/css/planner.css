@@ -65,6 +65,10 @@ div.olControlZoom a {
   border-radius: 4px;
 }
 
+body.template-visualize #map-controls a#wms-button {
+  display: none;
+}
+
 body.template-visualize #baselayers {
   cursor: pointer;
 }

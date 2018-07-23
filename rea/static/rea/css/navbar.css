@@ -1,3 +1,44 @@
+header {
+  padding-bottom: 0;
+}
+
+.navbar {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.header-container {
+  margin-left: 2em;
+  margin-right: 2em;
+  max-width: none;
+}
+
+.header-row {
+  width: 100%;
+}
+
+ul.nav.navbar-nav.d-flex.flex-wrap {
+  padding-top: 1em;
+  color: #777475;
+  font-weight: bold;
+}
+
+/* .navbar-right > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+} */
+
+/* .navbar-nav > li > a { */
+
+.navbar-brand img {
+  /* vertical-align:middle; */
+  height: 85%;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
 .dropdown-submenu {
     position: relative;
 }
