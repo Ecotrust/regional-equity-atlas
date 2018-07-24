@@ -40,12 +40,12 @@
                     </a>
                     <ul class="dropdown-menu">
                     {% for focus in topic.foci %}
-                      <li class="dropdown-submenu"><a href="#">{{ focus }}</a></li>
+                      <li class="dropdown-submenu"><a href="#">{{ focus.name }}</a></li>
                     {% endfor %}
                     </ul>
                   </li>
                   {% else %}
-                  <li class="dropdown-submenu"><a href="#">{{ topic }}</a></li>
+                  <li class="dropdown-submenu"><a href="#">{{ topic.name }}</a></li>
                   {% endif %}
                 {% endfor %}
               </ul>

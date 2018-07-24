@@ -185,6 +185,7 @@ INSTALLED_APPS = [
     'nursery',
     'rea',
     ### END INSERTED INSTALLED APPS ###
+    'ckeditor',
 ]
 
 # GET_SCENARIOS_URL = '/get_scenarios'
