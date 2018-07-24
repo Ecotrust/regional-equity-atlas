@@ -53,7 +53,7 @@ body.template-visualize #left-panel .panel-body {
 }
 
 body.template-visualize #left-panel #myTabContent {
-  /* height: calc(100% + 22px); */
+  height: calc(100% - 26px);
   /* height: 100%; */
 }
 
