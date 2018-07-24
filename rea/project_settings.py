@@ -214,6 +214,33 @@ INITIAL_Y = 45.53
 INITIAL_Z = 11
 SEARCH_DISABLED = True
 ADMIN_URL = "/admin"
+HEADER_TOPICS = [
+    {
+        'name': 'Places',
+        # 'order': 1,
+        'foci': [
+            'Beaverton Area',
+            'Cornelius-Forest Grove',
+            'Hillsboro',
+            'Tigard-Tualatin-Sherwood',
+        ]
+    },
+    {
+        'name': 'Communities',
+        # 'order': 2,
+        'foci': [
+            'African',
+            'African American',
+            'Asian',
+            'Latino',
+            'Middle Eastern + North African',
+            'Native American',
+            'Native Hawaiian and Pacific Islander',
+            'Slavic'
+        ]
+    },
+]
+
 
 from rea.local_settings import *
 # except ImportError:

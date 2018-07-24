@@ -3,13 +3,10 @@ header {
 }
 
 .navbar {
-  padding-bottom: 0;
-  padding-top: 0;
+  padding: 0;
 }
 
 .header-container {
-  margin-left: 2em;
-  margin-right: 2em;
   max-width: none;
 }
 
@@ -17,22 +14,60 @@ header {
   width: 100%;
 }
 
+.navbar-header,
+a.navbar-brand {
+  width: 100%;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
 ul.nav.navbar-nav.d-flex.flex-wrap {
   padding-top: 1em;
   color: #777475;
   font-weight: bold;
+  max-height: 50px;
+  padding-bottom: 1em;
+  width: 100%;
 }
 
-/* .navbar-right > li > a {
-  padding-top: 0;
-  padding-bottom: 0;
-} */
+ul.nav.navbar-nav.d-flex.flex-wrap li {
+  min-width: 13vw;
+  max-width: 13vw;
+  font-size: 1vw;
+}
 
-/* .navbar-nav > li > a { */
+@media (min-width: 992px) {
+  ul.nav.navbar-nav.d-flex.flex-wrap li {
+     font-size: 10px;
+  }
+}
+
+a.header-link.dropdown-toggle div {
+  width: 100%;
+  padding-left: 1em;
+}
+
+a.header-link.dropdown-toggle div:hover {
+  color: #4980AD;
+  cursor: pointer;
+  background-color: #EEE;
+  border-radius: 4px;
+}
 
 .navbar-brand img {
-  /* vertical-align:middle; */
-  height: 85%;
+  display: block;
+  max-height: 90%;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  top: auto;
+  margin-top: auto;
+}
+
+a.header-link.dropdown-toggle::after {
+  display: none;
 }
 
 .navbar-nav .dropdown-menu {
@@ -51,4 +86,12 @@ ul.nav.navbar-nav.d-flex.flex-wrap {
 
 .dropdown-submenu:hover .dropdown-menu {
   display: block;
+}
+
+nav .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a{
+  color: #CD371D;
+  background-color: #EEE;
 }

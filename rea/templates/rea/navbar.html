@@ -13,9 +13,9 @@
       </div>
     </div> <!-- col-2-->
 
-    <div class="col-8">
+    <div class="col-8 header-list">
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav d-flex flex-wrap">
           <!-- <li><a href="{% url 'planner' %}"><span class="icon-marco oversized"></span>MARINE PLANNER</a></li> -->
           <!-- {\% menus %} -->
@@ -23,25 +23,32 @@
           <li>
             <div class="dropdown">
               <a class="header-link dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-angle-right"></i>&nbsp;{{ header.name }}
-                <!-- <span class="caret"></span> -->
+                <div>
+                  <i class="fa fa-angle-right"></i>&nbsp;{{ header.name }}
+                  <!-- <span class="caret"></span> -->
+                </div>
               </a>
-                <ul class="dropdown-menu">
-                  {% for topic in header.topics %}
-                    {% if topic.foci|length > 0 %}
-                    <li class="dropdown-submenu">
-                      <a class="test" tabindex="-1" href="#">{{ topic.name }} <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                      {% for focus in topic.foci %}
-                        <li><a href="#">{{ focus.name }}</a></li>
-                      {% endfor %}
-                      </ul>
-                    </li>
-                    {% else %}
-                    <li><a href="#">{{ topic.name }}</a></li>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
+              <ul class="dropdown-menu">
+                {% for topic in header.topics %}
+                  {% if topic.foci|length > 0 %}
+                  <li class="dropdown-submenu">
+                    <a class="test" tabindex="-1" href="#">
+                      <div>
+                        {{ topic.name }}&nbsp;
+                        <span class="caret"></span>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu">
+                    {% for focus in topic.foci %}
+                      <li class="dropdown-submenu"><a href="#">{{ focus }}</a></li>
+                    {% endfor %}
+                    </ul>
+                  </li>
+                  {% else %}
+                  <li class="dropdown-submenu"><a href="#">{{ topic }}</a></li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
           </li>
           {% endfor %}
         </ul>
