@@ -32,4 +32,4 @@ class Content(models.Model):
     content = models.TextField(null=True, blank=True, default=None)
 
     def __str__(self):
-        return "%s_%s"
+        return "%s_%s" % (self.theme_content, self.focus if self.focus else 'Base')
