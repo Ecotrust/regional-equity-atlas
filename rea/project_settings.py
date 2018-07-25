@@ -186,6 +186,7 @@ INSTALLED_APPS = [
     'rea',
     ### END INSERTED INSTALLED APPS ###
     'ckeditor',
+    'import_export',
 ]
 
 # GET_SCENARIOS_URL = '/get_scenarios'
