@@ -4,7 +4,7 @@ from ckeditor.widgets import CKEditorWidget
 
 class InlineContentAdmin(admin.StackedInline):
     model = Content
-    fields = ('focus', 'content')
+    fields = ('content',)
     extra = 0
     classes = ['collapse', 'open']
     verbose_name = 'Content'
