@@ -21,6 +21,7 @@ import accounts.urls
 ### END PROJECT URL IMPORTS ###
 
 urlpatterns = [
+    url(r'^$', rea_views.visualize),
     url(r'^visualize/$', rea_views.visualize),
     url(r'^admin/?', admin.site.urls),
     ### INSERT PROJECT URL INCLUDES HERE ###
