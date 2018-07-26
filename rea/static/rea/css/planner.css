@@ -16,8 +16,10 @@ h4 {
 }
 
 #left-content {
+  height: 100%;
   padding: 4em;
   width: 100%;
+  overflow: scroll;
 }
 
 #left-content h1{
