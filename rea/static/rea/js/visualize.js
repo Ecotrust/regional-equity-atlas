@@ -1,6 +1,6 @@
 showContent = function (content_obj) {
   $('#left-content-panel').animate({"width": "40vw"}, 400);
-  $('.collapse-button-left').css('display', 'block');
+  $('.collapse-button-left').css('display', 'inline-block');
 
   $.ajax({
     type: "GET",
