@@ -22,7 +22,7 @@
           {% for header in headers %}
           <li>
             <div class="dropdown">
-              <a class="header-link dropdown-toggle" data-toggle="dropdown">
+              <a class="header-link dropdown-toggle" data-toggle="dropdown" onclick="showContent('{{header.name}}')">
                 <div>
                   <i class="fa fa-angle-right"></i>&nbsp;{{ header.name }}
                   <!-- <span class="caret"></span> -->

@@ -6,6 +6,48 @@ h4 {
   font-size: 15px;
 }
 
+#left-content {
+  /* width: 40vw; */
+  height: 100%;
+  background-color: rgba(243, 243, 244, 1);
+  float: left;
+  position: absolute;
+  z-index: 800;
+}
+
+.collapse-button-left {
+  display: none;
+  float: right;
+  color: white;
+  background-color: #CD371D;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding-right: 2px;
+  padding-top: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+
+}
+
+.collapse-button-left i {
+  color: white;
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+#map-wrapper {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100vw;
+}
+
 body.template-visualize #left-panel {
   top: 85px;
   /* bottom: 20px; */
