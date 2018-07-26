@@ -12,10 +12,12 @@ h4 {
   float: left;
   position: absolute;
   z-index: 800;
+  width: 0;
 }
 
 #left-content {
   padding: 4em;
+  width: 100%;
 }
 
 #left-content h1{
