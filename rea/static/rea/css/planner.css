@@ -6,13 +6,21 @@ h4 {
   font-size: 15px;
 }
 
-#left-content {
-  /* width: 40vw; */
+#left-content-panel {
   height: 100%;
   background-color: rgba(243, 243, 244, 1);
   float: left;
   position: absolute;
   z-index: 800;
+}
+
+#left-content {
+  padding: 4em;
+}
+
+#left-content h1{
+  text-align: center;
+  width: 100%;
 }
 
 .collapse-button-left {

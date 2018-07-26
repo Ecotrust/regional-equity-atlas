@@ -22,6 +22,7 @@ import accounts.urls
 
 urlpatterns = [
     url(r'^$', rea_views.visualize),
+    url(r'^rea/', include('rea.urls')),
     url(r'^visualize/$', rea_views.visualize),
     url(r'^admin/?', admin.site.urls),
     ### INSERT PROJECT URL INCLUDES HERE ###

@@ -22,7 +22,7 @@
           {% for header in headers %}
           <li>
             <div class="dropdown">
-              <a class="header-link dropdown-toggle" data-toggle="dropdown" onclick="showContent('{{header.name}}')">
+              <a class="header-link dropdown-toggle" data-toggle="dropdown" onclick="showContent({'header_id': {{header.pk}}, 'focus_id': false })">
                 <div>
                   <i class="fa fa-angle-right"></i>&nbsp;{{ header.name }}
                   <!-- <span class="caret"></span> -->
@@ -40,7 +40,9 @@
                     </a>
                     <ul class="dropdown-menu">
                     {% for focus in topic.foci %}
-                      <li class="dropdown-submenu"><a href="#">{{ focus.name }}</a></li>
+                      <li class="dropdown-submenu">
+                        <a href="#" onclick="showContent({'header_id': {{header.pk}}, 'focus_id': {{focus.pk}} })">{{ focus.name }}</a>
+                      </li>
                     {% endfor %}
                     </ul>
                   </li>
