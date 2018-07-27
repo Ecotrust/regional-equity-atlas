@@ -1,3 +1,11 @@
+/*
+  colors:
+    blue: #4980AD
+    red: #CD371D
+    gold: #B49814
+    gray: #666;
+*/
+
 body {
   overflow: hidden;
 }
@@ -52,6 +60,10 @@ h4 {
   cursor: pointer;
 }
 
+.collapse-button-left:hover {
+  background-color: #B49814;
+}
+
 .collapse-button-left i {
   color: white;
   -webkit-transform: scaleX(-1);
@@ -84,12 +96,13 @@ body.template-visualize #left-panel .panel-heading {
 }
 
 body.template-visualize .panel.collapsible .panel-title {
-  padding-left: 35px;
+  padding-left: 45px;
   padding-right: 10px;
+  min-height: 45px;
 }
 
 body.template-visualize .panel.collapsible.collapsed .show-collapsed {
-  padding-top: 5px;
+  padding-top: 13px;
 }
 
 body.template-visualize #left-panel .panel-heading .search-box {
@@ -109,6 +122,18 @@ body.template-visualize #left-panel .panel-title .form-search .right {
 body.template-visualize #left-panel .panel-title .collapse-button {
   left: 0;
   margin: 3px;
+  background-color: #CD371D;
+  padding-left: 2px;
+  padding-top: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+body.template-visualize #left-panel .panel-title .collapse-button:hover {
+  background-color: #B49814;
+  color: white;
 }
 
 body.template-visualize #left-panel .panel-body {
@@ -118,6 +143,10 @@ body.template-visualize #left-panel .panel-body {
 body.template-visualize #left-panel #myTabContent {
   height: calc(100% - 26px);
   /* height: 100%; */
+}
+
+body.template-visualize .sidebar-nav .nav-tabs > li {
+  padding-top: 5px;
 }
 
 

@@ -41,7 +41,11 @@
                     <ul class="foci-menu" id="{{header.pk}}_{{topic.pk}}">
                     {% for focus in topic.foci %}
                       <li class="foci-submenu">
-                        <a href="#" onclick="showContent({'header_id': {{header.pk}}, 'focus_id': {{focus.pk}} })">{{ focus.name }}</a>
+                        <a href="#" onclick="showContent({'header_id': {{header.pk}}, 'focus_id': {{focus.pk}} })">
+                          <div class="submenu-option">
+                            {{ focus.name }}
+                          </div>
+                        </a>
                       </li>
                     {% endfor %}
                     </ul>

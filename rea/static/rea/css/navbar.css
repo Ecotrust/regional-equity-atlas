@@ -1,3 +1,11 @@
+/*
+  colors:
+    blue: #4980AD
+    red: #CD371D
+    gold: #B49814
+    gray: #666;
+*/
+
 header {
   padding-bottom: 0;
 }
@@ -98,4 +106,30 @@ nav .dropdown-menu > li > a:hover,
 
 ul.foci-menu {
   display: none;
+  list-style: none;
+}
+
+div.dropdown ul.dropdown-menu li.dropdown-submenu ul.foci-menu li.foci-submenu {
+  margin: 1em 0;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  padding-right: 2em;
+}
+
+li.foci-submenu a {
+  color: #666;
+  font-weight: normal;
+  font-style: italic;
+  text-decoration: none;
+  width: 100%;
+}
+
+li.foci-submenu a:hover {
+  color: #CD371D;
+  font-weight: bold;
+}
+
+li.foci-submenu a div.submenu-option {
+  width: 100%;
 }
