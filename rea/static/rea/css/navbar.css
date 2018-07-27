@@ -95,3 +95,7 @@ nav .dropdown-menu > li > a:hover,
   color: #CD371D;
   background-color: #EEE;
 }
+
+ul.foci-menu {
+  display: none;
+}

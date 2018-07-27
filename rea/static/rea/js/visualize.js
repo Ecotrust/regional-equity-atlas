@@ -24,3 +24,11 @@ hideContent = function () {
   $('.collapse-button-left').css('display', 'none');
   $('#left-content').html(null);
 };
+
+showFoci = function(foci_div_id) {
+  $('#'+foci_div_id).show(400);
+}
+
+hideFoci = function(foci_div_id) {
+  $('#'+foci_div_id).hide(400);
+}
