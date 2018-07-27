@@ -1,5 +1,6 @@
 from django.db import models
 from data_manager.models import Layer, Theme
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 class ThemeContent(models.Model):
@@ -29,7 +30,7 @@ class Focus(models.Model):
 class Content(models.Model):
     theme_content = models.ForeignKey(ThemeContent)
     focus = models.ForeignKey(Focus, default=None, null=True, blank=True)
-    content = models.TextField(null=True, blank=True, default=None)
+    content = RichTextField(null=True, blank=True, default=None, config_name="custom")
 
     def __str__(self):
         return "%s_%s" % (self.theme_content, self.focus if self.focus else 'Base')

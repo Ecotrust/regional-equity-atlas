@@ -216,32 +216,35 @@ INITIAL_Y = 45.53
 INITIAL_Z = 11
 SEARCH_DISABLED = True
 ADMIN_URL = "/admin"
-# HEADER_TOPICS = [
-#     {
-#         'name': 'Places',
-#         # 'order': 1,
-#         'foci': [
-#             'Beaverton Area',
-#             'Cornelius-Forest Grove',
-#             'Hillsboro',
-#             'Tigard-Tualatin-Sherwood',
-#         ]
-#     },
-#     {
-#         'name': 'Communities',
-#         # 'order': 2,
-#         'foci': [
-#             'African',
-#             'African American',
-#             'Asian',
-#             'Latino',
-#             'Middle Eastern + North African',
-#             'Native American',
-#             'Native Hawaiian and Pacific Islander',
-#             'Slavic'
-#         ]
-#     },
-# ]
+
+### CKEDITOR ###
+CKEDITOR_UPLOAD_PATH = ""
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Full',
+    },
+    'custom': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Format'],
+            # ['Bold', 'Italic', 'Underline', 'Strike','Subscript','Superscript'],
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink'],
+            # ['Image','Table','HorizontalRule','SpecialChar'],
+            ['Image','Table'],
+            [ 'TextColor','BGColor' ],
+            ['RemoveFormat'],
+            ['Undo','Redo'],
+            ['Source'],
+        ],
+        # 'extraPlugins': ','.join([
+        #     'uploadimage', # the upload image feature
+        #     'autolink',
+        #     'clipboard',
+        # ]),
+    }
+}
 
 
 from rea.local_settings import *
