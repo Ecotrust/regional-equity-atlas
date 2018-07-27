@@ -118,7 +118,6 @@ body.template-visualize #left-panel .panel-title .form-search .right {
   top: 10px;
 }
 
-
 body.template-visualize #left-panel .panel-title .collapse-button {
   left: 0;
   margin: 3px;
@@ -149,6 +148,10 @@ body.template-visualize .sidebar-nav .nav-tabs > li {
   padding-top: 5px;
 }
 
+body.template-visualize .sidebar-nav .nav-tabs > li.active a {
+  border-bottom: none;
+  color: #4980AD;
+}
 
 body.template-visualize #map-controls {
   top: 10px;
