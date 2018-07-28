@@ -42,6 +42,14 @@ h4 {
   width: 100%;
 }
 
+#left-content-panel img {
+  margin: auto;
+  position: relative;
+  max-width: 100%;
+  display: inline-block;
+  height: auto !important;
+}
+
 .collapse-button-left {
   display: none;
   color: white;
