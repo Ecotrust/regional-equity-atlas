@@ -31,7 +31,7 @@
               <ul class="dropdown-menu">
                 {% for topic in header.topics %}
                   {% if topic.foci|length > 0 %}
-                  <li class="dropdown-submenu" onmouseenter="showFoci('{{header.pk}}_{{topic.pk}}')" onmouseleave="hideFoci('{{header.pk}}_{{topic.pk}}')">
+                  <li class="dropdown-submenu" onmouseenter="showFoci('{{header.pk}}_{{topic.pk}}', event)">
                     <a class="test" tabindex="-1" href="#">
                       <div>
                         {{ topic.name }}&nbsp;
