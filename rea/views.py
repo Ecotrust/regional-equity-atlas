@@ -53,21 +53,18 @@ def visualize(request, template=settings.VISUALIZE_PLANNER_TEMPLATE):
         headers_list.append(header_dict)
     context = response_dict['context']
     context['headers'] = headers_list
-    # import ipdb; ipdb.set_trace()
     return render(request, template, context)
 
 def get_content(request):
     from data_manager.models import Theme
     from rea.models import ThemeContent, Content, Focus
-    # import json
-    # request_content = json.dumps()
     focus_id = request.GET.get('focus_id', default=False)
     header_id = request.GET.get('header_id')
     theme = Theme.objects.get(pk=header_id)
     if not focus_id in [False, 'false']:      # can't use 'if focus' in case focus is numeric
         focus = Focus.objects.get(pk=focus_id)
         content = Content.objects.get(theme_content__theme__pk=header_id, focus=focus_id)
-        title = "<h1>%s:<br/>%s</h1>" % (theme.display_name, focus.name)
+        title = "<h1>%s<br/>%s</h1>" % (focus.name, theme.display_name)
     else:
         content = Content.objects.get(theme_content__theme__pk=header_id, focus=None)
         title = "<h1>%s</h1>" % (theme.display_name)

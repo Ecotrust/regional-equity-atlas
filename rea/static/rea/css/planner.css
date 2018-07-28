@@ -42,6 +42,20 @@ h4 {
   width: 100%;
 }
 
+#left-content h2 {
+  background-color: orange;
+  color: white;
+  margin: 2em;
+  width: auto;
+}
+#left-content h3 {
+  color: orange;
+}
+
+#left-content p {
+  font-size: medium;
+}
+
 #left-content-panel img {
   margin: auto;
   position: relative;
