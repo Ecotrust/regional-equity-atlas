@@ -53,6 +53,7 @@ def visualize(request, template=settings.VISUALIZE_PLANNER_TEMPLATE):
         headers_list.append(header_dict)
     context = response_dict['context']
     context['headers'] = headers_list
+    context['MAP_TECH'] = settings.MAP_TECH
     return render(request, template, context)
 
 def get_content(request):

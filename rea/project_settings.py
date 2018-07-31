@@ -193,7 +193,7 @@ INSTALLED_APPS = [
 # SCENARIO_FORM_URL = '/features/scenario/form/'
 # SCENARIO_LINK_BASE = '/features/scenario/app_scenario'
 
-MAP_TECH = 'ol4'
+MAP_TECH = 'ol2'
 
 
 # try:

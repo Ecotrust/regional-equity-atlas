@@ -219,10 +219,17 @@ body.template-visualize #toggleBaselayer {
   width: 45px;
   height: 45px;
   padding: 4px;
+  color: white;
+  text-shadow: 2px 2px #000;
 }
 
 div.olControlZoom {
   bottom: 25px;
+}
+
+body.template-visualize .SimpleLayerSwitcher {
+  width: auto;
+  padding: 1em;
 }
 
 footer {
