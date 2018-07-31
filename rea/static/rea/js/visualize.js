@@ -1,6 +1,9 @@
 showContent = function (content_obj) {
   $('#left-content-panel').animate({"width": "40vw"}, 400);
   $('.collapse-button-left').css('display', 'inline-block');
+  theme_id = content_obj.header_id;
+  $('#theme_'+theme_id).addClass('active');
+  $('#theme_'+theme_id+'_layers').addClass('in');
 
   $.ajax({
     type: "GET",
