@@ -10,8 +10,20 @@ body {
   overflow: hidden;
 }
 
+h1 {
+  color: rgb(33,37,41);
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 h4 {
   font-size: 15px;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  line-height: 1.2;
 }
 
 #left-content-panel {
@@ -47,9 +59,15 @@ h4 {
   color: white;
   margin: 2em;
   width: auto;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
 }
 #left-content h3 {
   color: orange;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  font-weight: 500;
 }
 
 #left-content p {

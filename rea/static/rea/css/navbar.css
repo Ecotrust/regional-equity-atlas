@@ -6,6 +6,11 @@
     gray: #666;
 */
 
+body {
+  font-size: 1rem;
+  font-family: Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
 header {
   padding-bottom: 0;
 }
@@ -14,8 +19,13 @@ header {
   padding: 0;
 }
 
-.header-container {
+nav.navbar.navbar-default.navbar-fixed-top {
+  position: relative;
+}
+
+div.container.header-container {
   max-width: none;
+  width: 100%;
 }
 
 .header-row {
@@ -27,8 +37,27 @@ a.navbar-brand {
   width: 100%;
 }
 
+a.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  line-height: inherit;
+  white-space: nowrap;
+  height: 50px;
+}
+
 .navbar-nav {
   margin: 0;
+}
+
+div.header-list {
+  height: 50px;
+  /* overflow: hidden; */
+}
+
+#bs-example-navbar-collapse-1 {
+  /* overflow: hidden; */
 }
 
 ul.nav.navbar-nav.d-flex.flex-wrap {
@@ -38,6 +67,10 @@ ul.nav.navbar-nav.d-flex.flex-wrap {
   max-height: 50px;
   padding-bottom: 1em;
   width: 100%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 ul.nav.navbar-nav.d-flex.flex-wrap li {
@@ -50,6 +83,16 @@ ul.nav.navbar-nav.d-flex.flex-wrap li {
   ul.nav.navbar-nav.d-flex.flex-wrap li {
      font-size: 10px;
   }
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 1.42857;
+  color: black;
+  white-space: nowrap;
+  font-weight: 900;
 }
 
 a.header-link.dropdown-toggle div {
@@ -78,8 +121,11 @@ a.header-link.dropdown-toggle::after {
   display: none;
 }
 
-.navbar-nav .dropdown-menu {
+.navbar-nav div.dropdown.open ul.dropdown-menu {
   position: absolute;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: rgba(0,0,0,0.176) 0px 6px 12px 0px;
 }
 
 .dropdown-submenu {
@@ -117,12 +163,16 @@ div.dropdown ul.dropdown-menu li.dropdown-submenu ul.foci-menu li.foci-submenu {
   padding-right: 2em;
 }
 
+div.dropdown a,
 li.foci-submenu a {
   color: #666;
-  font-weight: normal;
-  font-style: italic;
   text-decoration: none;
   width: 100%;
+}
+
+li.foci-submenu a {
+  font-weight: normal;
+  font-style: italic;
 }
 
 li.foci-submenu a:hover {

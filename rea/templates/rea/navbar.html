@@ -1,7 +1,7 @@
 {% load static %}
 <div class="container header-container">
   <div class="row header-row">
-    <div class="col-2">
+    <div class="col-sm-2">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <a class="navbar-brand" href="/">
@@ -13,13 +13,15 @@
       </div>
     </div> <!-- col-2-->
 
-    <div class="col-8 header-list">
+    <div class="col-sm-8 header-list">
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div id="bs-example-navbar-collapse-1">
+        <!-- {/% if forloop.counter0|divisibleby:"2" %} -->
         <ul class="nav navbar-nav d-flex flex-wrap">
+        <!-- {/% endif %} -->
+        {% for header in headers %}
           <!-- <li><a href="{% url 'planner' %}"><span class="icon-marco oversized"></span>MARINE PLANNER</a></li> -->
           <!-- {\% menus %} -->
-          {% for header in headers %}
           <li>
             <div class="dropdown">
               <a class="header-link dropdown-toggle" data-toggle="dropdown" onclick="showContent({'header_id': {{header.pk}}, 'focus_id': false })">
@@ -47,7 +49,7 @@
                           </div>
                         </a>
                       </li>
-                    {% endfor %}
+                      {% endfor %}
                     </ul>
                   </li>
                   {% else %}
@@ -57,10 +59,12 @@
               </ul>
           </li>
           {% endfor %}
+        <!-- {/% if forloop.counter0|divisibleby:"2" is not True %} -->
         </ul>
+        <!-- {/% endif %} -->
       </div><!-- /.navbar-collapse -->
     </div><!-- col-9 -->
-    <div class="col-2">
+    <div class="col-sm-2">
       <ul class="nav navbar-nav navbar-right">
         <li>
           {% if user.is_authenticated %}
